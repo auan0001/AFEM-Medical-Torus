@@ -1,4 +1,7 @@
 # System of two hormones
+
+<img src="https://github.com/auan0001/AFEM-Medical-Torus/blob/main/medtorus.gif" width="400" height="400" />
+
 ## Running the script
 The FEM computation depends on (the now legacy) [FEniCS](https://fenicsproject.org/download/archive/). The files generated can be visualized in [ParaView](https://www.paraview.org/). 
 ## Numerical Solution
