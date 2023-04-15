@@ -1,6 +1,6 @@
 # System of two hormones
 ## Running the script
-The FEM computation depends on (the now legacy) [https://fenicsproject.org/download/archive/](FEniCS). The files generated can be visualized in [https://www.paraview.org/](ParaView). 
+The FEM computation depends on (the now legacy) [FEniCS](https://fenicsproject.org/download/archive/). The files generated can be visualized in [ParaView](https://www.paraview.org/). 
 ## Numerical Solution
 Consider the system of equations modelling a medical torus containing
 two hormones
