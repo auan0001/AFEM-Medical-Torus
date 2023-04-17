@@ -1,4 +1,4 @@
-# System of two hormones
+# 2D Medical Torus - System of two hormones
 
 <img src="https://github.com/auan0001/AFEM-Medical-Torus/blob/main/medtorus.gif" width="400" height="400" />
 
