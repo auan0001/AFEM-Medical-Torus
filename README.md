@@ -116,7 +116,7 @@ change into matrix ODE notation $$\begin{aligned}
 \end{aligned}
 $$
 
-The Crank-Nicholson formulation
+The Crank-Nicolson formulation
 
 $$
 \begin{split}
