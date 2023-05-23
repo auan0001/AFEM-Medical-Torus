@@ -63,7 +63,7 @@ substituted and by using the Lagrange interpolant $\pi_h \in  W_{h,0}$
 
 $$
 \begin{split}
-    S &= uv^{2}, \quad S \approx \pi_h S=\sum_{N_j \in  \mathcal{N}_h}S_{j}\varphi_j\\
+    S &= uv^{2}, \quad S \approx \pi_h S=\sum_{N_j \in  N_h}S_{j}\varphi_j\\
   \end{split}
 $$
 
@@ -71,7 +71,7 @@ which can be prepared for the Galerkin FEM
 
 $$
 \begin{split}
-    \pi_h S&=\sum_{N_j \in \mathcal{N}_h} \xi_{1,j}\xi_{2,j}^{2}\\
+    \pi_h S&=\sum_{N_j \in N_h} \xi_{1,j}\xi_{2,j}^{2}\\
   \end{split}
 $$
 
@@ -80,11 +80,11 @@ and inserted along with the linear terms consisting of $u_h, v_h$
 $$
 \begin{aligned}
   \begin{split}
-    \sum_{N_j\in \mathcal{N}_h}\partial_t\xi_{1,j} \int_{\mathcal{B}}\varphi_i\varphi_i d\boldsymbol x+\sum_{N_j\in \mathcal{N}_h}\alpha_1 \xi_{1,j}\int_{\mathcal{B}}\nabla \varphi_j \cdot \nabla \varphi_i d\boldsymbol x \\
-    +\sum_{N_j\in \mathcal{N}_h}\xi_{1,j}\xi_{2,j}^{2}\int_{\mathcal{B}}\varphi_j \varphi_id\boldsymbol x + \sum_{N_j\in \mathcal{N}_h} c_f\xi_{1,j}\int_{\mathcal{B}}\varphi_j \varphi_id\boldsymbol x
+    \sum_{N_j\in N_h}\partial_t\xi_{1,j} \int_{\mathcal{B}}\varphi_i\varphi_i d\boldsymbol x+\sum_{N_j\in N_h}\alpha_1 \xi_{1,j}\int_{\mathcal{B}}\nabla \varphi_j \cdot \nabla \varphi_i d\boldsymbol x \\
+    +\sum_{N_j\in N_h}\xi_{1,j}\xi_{2,j}^{2}\int_{\mathcal{B}}\varphi_j \varphi_id\boldsymbol x + \sum_{N_j\in N_h} c_f\xi_{1,j}\int_{\mathcal{B}}\varphi_j \varphi_id\boldsymbol x
     = c_f\int_{\mathcal{B}}\varphi_j d\boldsymbol x, \\
-    \sum_{N_j\in \mathcal{N}_h}\partial_t\xi_{2,j} \int_{\mathcal{B}}\varphi_i\varphi_i d\boldsymbol x+ \sum_{N_j\in \mathcal{N}_h}\alpha_2 \xi_{2,j}\int_{\mathcal{B}}\nabla \varphi_j \cdot \nabla \varphi_i d\boldsymbol x\ \\
-    -\sum_{N_j\in \mathcal{N}_h}\xi_{1,j}\xi_{2,j}^{2}\int_{\mathcal{B}}\varphi_j \varphi_id\boldsymbol x + \sum_{N_j\in \mathcal{N}_h}(c_f+c_k)\xi_{2,j}\int_{\mathcal{B}}\varphi_j \varphi_id\boldsymbol x=0, \\
+    \sum_{N_j\in N_h}\partial_t\xi_{2,j} \int_{\mathcal{B}}\varphi_i\varphi_i d\boldsymbol x+ \sum_{N_j\in N_h}\alpha_2 \xi_{2,j}\int_{\mathcal{B}}\nabla \varphi_j \cdot \nabla \varphi_i d\boldsymbol x\ \\
+    -\sum_{N_j\in N_h}\xi_{1,j}\xi_{2,j}^{2}\int_{\mathcal{B}}\varphi_j \varphi_id\boldsymbol x + \sum_{N_j\in N_h}(c_f+c_k)\xi_{2,j}\int_{\mathcal{B}}\varphi_j \varphi_id\boldsymbol x=0, \\
     \qquad \forall \boldsymbol w \in W.
   \end{split}
 \end{aligned}
