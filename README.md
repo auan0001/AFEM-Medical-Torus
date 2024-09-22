@@ -107,8 +107,14 @@ $$
   \begin{split}
     b=c_f\int_{\mathcal{B}}\varphi_j d\boldsymbol x.
   \end{split}
-\end{aligned}$$ In order to discretize the system, it is convenient to
-change into matrix ODE notation $$\begin{aligned}
+\end{aligned}
+$$
+
+In order to discretize the system, it is convenient to
+change into matrix ODE notation
+
+$$
+\begin{aligned}
   \begin{split}
     M \frac{d\xi_{j,1}}{dt}+\alpha_1 A\xi_{j,1}+MS+c_fM\xi_{j,1} = b\\
     M \frac{d\xi_{j,2}}{dt}+\alpha_2 A\xi_{j,2}-MS+(c_f+c_k)M\xi_{j,2}= 0.
